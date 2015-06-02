@@ -1,0 +1,30 @@
+{
+	"population_size": 100,
+	"n_iterations": 100,
+	"k_elitist": 1,
+
+	"scheduler": "LINEAR",
+	"encoding": "BINARY", 
+	"selection": {
+        "type": "ROULETTE",
+		"size": 3
+	},
+	"crossover": {
+		"type": "BINARY",
+		"probability": 0.97,
+		"n_cut": 1,
+        "alpha": 0.5
+	},
+	"mutation": {
+		"type": "BINARY",
+		"probability": 0.005
+	},
+
+	"variables": [
+		{
+			"begin": -2.0,
+			"end": 2.0,
+			"precision": 0.0001
+		}
+	]
+}

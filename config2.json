@@ -1,0 +1,51 @@
+{
+    "population_size": 100,
+    "n_iterations": 100,
+    "k_elitist": 2,
+
+    "encoding": "BINARY",
+
+    "scheduler": "LINEAR",
+    "selection": {
+        "type": "ROULETTE",
+        "size": 15
+    },
+    "crossover": {
+        "type": "BINARY",
+        "probability": 0.97,
+        "n_cut": 1,
+        "alpha": 0.5
+    },
+    "mutation": {
+        "type": "BINARY",
+        "probability": 0.005
+    },
+
+    "variables": [
+        {
+            "begin": -30.0,
+            "end": 30.0,
+            "precision": 0.0001
+        },
+        {
+            "begin": -30.0,
+            "end": 30.0,
+            "precision": 0.0001
+        },
+        {
+            "begin": -30.0,
+            "end": 30.0,
+            "precision": 0.0001
+        },
+        {
+            "begin": -30.0,
+            "end": 30.0,
+            "precision": 0.0001
+        },
+        {
+            "begin": -30.0,
+            "end": 30.0,
+            "precision": 0.0001
+        }
+    ]
+}
